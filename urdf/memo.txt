@@ -1,0 +1,8 @@
+roslaunch urdf_tutorial display.launch model:=model.urdf
+roscp urdf_tutorial urdf.rviz ./
+
+MoveIt
+http://answers.ros.org/question/212714/load-mesh-to-rviz-and-publish-current-scene-no-effect-moveit/
+http://answers.ros.org/question/56466/ros-moveit-programmatically-adding-collision-object/
+https://github.com/ros-industrial/industrial_training/wiki/Motion-Planning-RVIZ
+http://robotics.ait.kyushu-u.ac.jp/books/ROSBOOK_JP.pdf

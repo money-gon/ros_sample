@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<robot name="my_model">
+  <joint name="my_model__joint" type="fixed">
+    <parent link="my_model__base_link"/>
+    <child link="my_model__child_link"/>
+    <origin rpy="0  0  0" xyz="0  0  3"/>
+    <axis xyz="0  0  0"/>
+    <limit effort="0.0" lower="0.0" upper="0.0" velocity="0.0"/>
+  </joint>
+  <link name="my_model__base_link">
+    <inertial>
+      <mass value="1.0"/>
+      <origin rpy="0  0  0" xyz="0   0   0.5"/>
+      <inertia ixx="0.083" ixy="0.0" ixz="0.0" iyy="0.083" iyz="0.0" izz="0.083"/>
+    </inertial>
+    <collision name="my_model__collision">
+      <origin rpy="0  0  0" xyz="0   0   0.5"/>
+      <geometry>
+        <box size="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual name="my_model__visual">
+      <origin rpy="0  0  0" xyz="0   0   0.5"/>
+      <geometry>
+        <box size="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="my_model__child_link">
+    <inertial>
+      <mass value="1.0"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0.083" ixy="0.0" ixz="0.0" iyy="0.083" iyz="0.0" izz="0.083"/>
+    </inertial>
+    <collision name="my_model__collision">
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <geometry>
+        <box size="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual name="my_model__visual">
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <geometry>
+        <box size="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
